@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap" /></svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+
+                <form>
+                    <!--                <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">-->
+                    <select class="form-select form-select-lg mb-3" id="populate-select"
+                        aria-label=".form-select-lg example" onmousedown="this.value='';"
+                        onchange="jsFunction(this.value);">
+                        <option selected>Select Country to display</option>
+
+                    </select>
+                </form>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="card w-100">
+                <div class="profile-card-4 text-center">
+                    <img id="img" src="https://flagcdn.com/w320/za.png" class="img img-responsive">
+                    <div class="profile-content">
+                        <div class="profile-name" id="country">South Africa
+                        </div>
+                        <br>
+                        <div class="profile-description">Coronavirus disease (COVID-19) is an infectious disease caused
+                            by the SARS-CoV-2 virus.
+                            Most people who fall sick with COVID-19 will experience mild to moderate symptoms and
+                            recover without special treatment.
+                            However, some will become seriously ill and require medical attention.
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="profile-overview">
+                                    <p>ACTIVE CASES</p>
+                                    <h4 id="active_cases">1300</h4>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="profile-overview">
+                                    <p>CONFIRMED</p>
+                                    <h4 id="confirmed"> 250</h4>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="profile-overview">
+                                    <p>DEATHS</p>
+                                    <h4 id="deaths">168</h4>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="profile-overview">
+                                    <p>RECOVERED</p>
+                                    <h4 id="recovered">168</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="custom.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
